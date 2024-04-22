@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Parrufu Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<section class=top-section>
+    <div class="top-left">
+        <a class="link" href="#historia">Historia</a>
+    </div>
+    <div class="top-mid">
+        <a class="title" href="index.html"><p class="titulo">PARRUFU RESTAURANT</p></a>
+    </div>
+    <div class="top-right">
+        <a class="link" href="html/utils/valoracions.html">Valoracions</a>
+    </div>
+</section>
+<section class="content">
+    <div class="carrusel">
+        <div class="images">
+            <img class="carrousell-image" id="imagen" src="resources/carrusel/image7.jpg" alt="Iniciando"> 
+        </div>
+    </div>
+    <div id="historia" class="info">
+        <h2>PARRUFU RESTAURANT</h2>
+        <pre>           L’any 1933 aproximadament, en Juan Castañé i la Lluïsa Madreny, van obrir sota casa seva el bar Sport,
+            a peu de carretera d’Hostalric.
+
+            Esperant temps millors, van mantenir el bar amb dignitat durant els difícils anys de la postguerra.
+            Ja a la dècada dels anys 70, amb el seu fill, en Miquel i la seva dona Trini al capdevant de l’establiment,
+            aquest es va convertir en un referent en tota la comarca per la qualitat de les seves tapes, entrepans i carns a la brasa.
+
+            El 1980, en Miquel i la Trini, compren l'immoble del costat i, amb l'ajuda dels seus fills Joan i Carme, inauguren
+            el Restaurant Parrufu i li posen el nom pel qual els seus clients coneixien la casa: 'Cal Parrufu'. En aquest mateix any, 
+            també es construeix el pàrquing i
+            l'entrada posterior del menjador.
+            Si bé durant els primers anys es compagina el servei de restaurant amb el de bar, aquest es tanca definitivament l’any 1980
+            i en el seu lloc s’adequa un segon menjador. Molt aviat s’incorpora l’Empar, filla petita del matrimoni.
+
+            L’any 2002, l’empresa adquireix un nou immoble al costat del restaurant i es construeix un tercer menjador més ample i 
+            amb un caire més rústic que li confereix la pedra de les seves parets. El 2011 es remodela tot l’edifici i es condiciona
+            una terrassa en l’espai situat a la part posterior i al peu de la muralla, on prendre el cafè o una copa per acabar l’experiència.
+
+            Actualment, el menjador i la cuina estan dirigits pels germans Empar i Joan Castanyer que, tot i haver afegit alguns productes més
+            a la carta, mantenen els principis de la cuina d’en Miquel:
+            “UNA CUINA SENZILLA, BASADA EN LA QUALITAT DEL PRODUCTE I A UN PREU COMPETITIU".
+
+            Mentre que la tercera germana, la Carme, s’encarrega de la comptabilitat del restaurant.
+
+            Darrerament, s’ha incorporat a la direcció del restaurant la Carla, filla de l’Empar.
+
+            El 2021 han comprat el local del costat del restaurant on han arreglat un impressionant menjador de parets de pedra i sostre alt.
+
+            També han condicionat la terrassa de la part de darrere perfecte per servir dinars i sopars de cara al bon temps.
+            
+        </pre>
+    </div>
+</section>
+<section class="bottom">
+    <div class="bottom-left">
+        <a href="mailto:reservas@parrufu.com">Correu electronic</a>
+        <a href="tel:+34972300000">Telèfon</a>
+        <a href="html/utils/reserva.html">Reservar cita  <i class="bi bi-calendar-date-fill"></i></a>
+    </div>
+    <div class="bottom-mid">
+
+    </div>
+    <div class="bottom-right">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2976.8030470464737!2d2.6320172759373675!3d41.74634087125657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bb254368efb895%3A0x254df06ba578c487!2sRestaurant%20Parrufu!5e0!3m2!1sca!2ses!4v1711016782430!5m2!1sca!2ses" width="300" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+<script>
+var images = [                       
+            "resources/carrusel/image8.jpg",
+            "resources/carrusel/image9.jpg",
+            "resources/carrusel/image10.jpg",
+            "resources/carrusel/image7.jpg" ]; // replace with your images
+var currentImageIndex = 0;
+var slideshow = document.getElementById("imagen");
+
+function updateImage() {
+    slideshow.src = images[currentImageIndex];
+    slideshow.style.opacity = "0.2";
+    setTimeout(1)
+    slideshow.style.opacity = "0.3";
+    setTimeout(1)
+    slideshow.style.opacity = "0.4";
+    setTimeout(1)
+    slideshow.style.opacity = "0.5";
+    setTimeout(1)
+    slideshow.style.opacity = "0.6";
+    setTimeout(1)
+    slideshow.style.opacity = "0.7";
+    setTimeout(1)
+    slideshow.style.opacity = "0.8";
+    setTimeout(1)
+    slideshow.style.opacity = "0.9";
+    setTimeout(1)
+    slideshow.style.opacity = "1";    
+}
+
+function nextImage() {
+    slideshow.style.opacity = "0.1";
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    setTimeout(updateImage, 500); // wait for the transition to finish before changing the image
+}
+
+setInterval(nextImage, 4000); // change image every 4 seconds
+</script>
+

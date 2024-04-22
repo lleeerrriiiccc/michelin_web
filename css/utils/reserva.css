@@ -1,0 +1,104 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+.content-mid{
+    padding: 5px;
+    grid-column: 2 / 6;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.option1{
+    width: fit-content;
+    height: fit-content;
+}
+.option1 td{
+    padding: 0;
+    width: 20px;
+}
+.espacio{
+    padding: 0%;
+}
+.option1{
+    border-top: 1px solid black;    
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+.form{
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+}
+.titulo{
+    grid-column: 2 / 4;
+    grid-row: 1;
+    text-align: center;
+    font-family: text;
+    font-size: 25px;
+}
+.field{
+    grid-column: 2;
+    grid-row: 2 ;
+    font-family: sans-serif;
+}
+.option{
+    grid-column: 4;
+    grid-row: 2;
+    width: fit-content;
+    height: fit-content;
+    font-family: sans-serif;
+}
+.field1{
+    grid-column: 2;
+    grid-row: 3;
+    font-family: sans-serif;
+}
+.option1{
+    grid-column: 4;
+    grid-row: 3;
+    width: fit-content;
+    height: fit-content;
+    font-family: sans-serif;
+}
+.enviar{
+    grid-column: 2 / 4;
+    grid-row: 4;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    align-items: center;
+}
+
+.boton{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+}
+.bi-calendar-plus{
+    color: white;
+    margin-right: 5px;
+}
+.enviar:hover{
+    background-color: #0072eb;
+    transition: ease-in-out;
+}
+@font-face{
+    font-family: 'text';
+    src: url(../resources/fonts/h1/Sweet\ Heart.otf);
+}
