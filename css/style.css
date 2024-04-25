@@ -41,6 +41,7 @@ body{
     );
   color:transparent;
   background-clip: text;
+  flex-direction: column;
 }
 .top-mid p{
   font-family: title;
@@ -52,6 +53,7 @@ body{
   text-decoration: none;
   color: transparent;
 }
+
 .top-left{
   height: 100%;
   display: flex;
@@ -94,6 +96,7 @@ body{
 .content{
     width: 100%;
     height: fit-content;
+    margin-bottom:5px ;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, fit-content);
@@ -174,6 +177,30 @@ body{
     text-decoration: none;
     color: transparent;
     transition: scroll 0.5s;
+}
+.bottom-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--background-color);
+    font-family: title;
+    font-size: 20px;
+    margin: 0.2rem;
+
+}
+.carta{
+  font-family: text;
+  background-color: white;
+  box-shadow: 0px 2px 2px 0px rgb(0, 0, 0);
+  margin-bottom: 1.5px;
+  align-content: center;
+  align-items: center ;
+  margin: 1px;
+  border-radius: 5px;
+}
+.carta:hover{
+  box-shadow: 0px 4px 10px 0px rgb(0, 0, 0);
+  transition: box-shadow 0.3s ease-in;
 }
 /* fonts */
 @font-face{
